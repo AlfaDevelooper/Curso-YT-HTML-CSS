@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <h1 align="center">Aplica al trabajo</h1>
+
+    <!--la etiqueta form crea un formulario-->
+    <form action="">
+        <!--la etiqueta input text concede la entrada de datos-->
+        <!--type= tipo de dato string-->
+        <!--name= identificador de input-->
+        <!--id = identificador unico de input-->
+        <!--palceholder = leyenda que aparece hasta que usuario ingresa un valor -->
+        <!--maxlenght = solo admite el input si cumplimos con el requisito -->
+        <!--minlenght = idem max-->
+        <!--required = solo admite el input si el campo se llena-->
+        <label for="getName">ingresa tu nombre</label>
+        <input type="text" name="getName" id="" placeholder="Ingresa tu nombre" maxlength="10" minlength="3" required>
+        
+        <br><br>
+
+        <label for="getEmail">ingresa tu email</label>
+        <input type="email" name="getEmail" id="getEmail" placeholder="Ingresa tu email" maxlength="10" minlength="3" required>
+       
+        <br><br>
+
+        <label for="getPhone">ingresa tu telefono</label>
+        <input type="number" name="getPhone" id="getPhone" placeholder="Ingresa tu telefono" maxlength="10" minlength="3" required>
+        
+        <br><br>
+
+        <label for="getDate">ingresa tu telefono</label>
+        <input type="date" name="getDate" id="getDate" placeholder="Ingresa tu telefono" maxlength="10" minlength="3" required>
+        
+        <br><br>
+
+        <h3>Elige tu pais</h3>
+
+        <select>
+            <option value="MX">Mexico</option>
+            <option value="ARG">Argentina</option>
+            <option value="EEUU">Estados Unidos</option>    
+        </select>
+
+        <h3>Elige tu horarios</h3>
+
+        <label for="Horario">
+            <input type="radio" name="Horario" id="">Matutino
+            <input type="radio" name="Horario" id="">Nocturno
+            <input type="radio" name="Horario" id="">Mixto
+        </label>
+
+        <!--Acepta los terminos y condiciones-->
+        <h3>Acepta los terminos</h3>
+        <label for="terminosCondiciones">
+            <input type="checkbox" name="terminosCondiciones" id="terminosCondiciones">Acepta Terminos y Condiciones
+        </label>
+
+        <!--etiqueta de comentarios-->
+        <h3>Deja tus comentarios</h3>
+        <textarea name="comentario" id="comentario" cols="50" rows="15"></textarea>
+
+        <br><br>
+
+        <input type="submit"> 
+        <input type="reset" value="Reiniciar Valores">
+    </form>
+
+</body>
+</html>

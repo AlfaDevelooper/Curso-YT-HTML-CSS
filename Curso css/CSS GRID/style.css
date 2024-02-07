@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+/*se ultiliza un contenedor para crear un GRID*/
+.container{
+    height: 500px;
+    width: 90%;
+    margin: 40px auto;
+    border: 2px solid;
+/*se habilita el grid mediante el display/grid*/
+    display: grid;
+/*1fr = 1 fraccion de columnas*/
+    grid-template-columns: repeat(6,1fr);
+/*fraccion de filas*/
+    grid-template-rows: 100px 10em 1fr;
+    /*gap crea un espacio entre elementos*/
+    gap: 20px;
+}
+
+.item{
+    color: white;
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.item--1{
+    background-color: teal;
+    /*nos permite ubicar elementos en determinadas coordenadas de columnas*/
+    grid-column: 1/5;
+    grid-row: 1/2;
+}
+
+.item--2{
+    background-color: slateblue;
+    grid-column: 1/5;
+    grid-row: 2/3;
+}
+
+.item--3{
+    background-color: tomato;
+    grid-column: 1/7;
+    grid-row: 3/4;
+}
+
+.item--4{
+    background-color: mediumvioletred;
+    grid-column: 5/7;
+    grid-row: 1/3;
+}

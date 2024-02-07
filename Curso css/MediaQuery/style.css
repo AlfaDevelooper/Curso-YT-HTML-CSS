@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.element{
+    width: 90%;
+    height: 200px;
+    background-color: slateblue;
+    margin: 0 auto;
+}
+
+/*max-min*/
+@media(max-width: 500){
+    .element{
+        background-color: aqua;
+    }
+}
+
+@media(min-width: 300px){
+    .element{
+        background-color: crimson;
+    }
+}
+

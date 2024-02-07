@@ -1,0 +1,48 @@
+/*modo de comentar en css*/
+/*si el selector no encuentra la etiqueta no modifica nada*/
+h1{
+    color:seagreen;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2{
+    color: aqua;
+    font-style: italic;
+}
+
+/*el punto selecciona class*/
+.subtitle{
+    text-align: center;
+    background-color: teal;
+    color: white;
+}
+/* el # selecciona ids*/
+#title{
+    color: white;
+    background-color: pink;
+    padding: 20px 10 px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/*selectores combinadoras*/
+/*conbinador de descendientes*/
+
+.section.h2{
+    background-color: crimson;
+}
+
+ul.li{
+    font-size: 20px;
+    list-style: square;
+}
+
+/*combina dos selectores*/
+
+.section > ul{
+    background-color: black;
+    color: white;
+    padding: 20px 40px;
+}

@@ -1,0 +1,26 @@
+/*Custom properties*/
+/*selector que representa etiqueta html*/
+
+:root{
+    --primary-color: steelblue;
+    --borders: 3px dashed black;
+    --font: Arial;
+}
+
+.title{
+    color: var(--primary-color);
+    border: var(--borders);
+}
+
+body{
+    font-family: var(--font);
+}
+
+.paragraph{
+    color: var(--primary-color);
+}
+
+.cta{
+    border: var(--borders);
+}
+

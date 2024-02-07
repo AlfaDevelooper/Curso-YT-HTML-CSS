@@ -1,0 +1,51 @@
+*{
+    height: 900px;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.parent{
+    margin: 30px auto;
+    width: 350px;
+    padding: 1rem;
+    background-color: indigo;
+    position: relative;
+}
+
+.child{
+    width: 100px;
+    height: 100px;
+    background-color: tomato;
+    margin-bottom: 20px;
+    font-size: 1.3rem;
+    word-wrap: break-word;
+    text-align: center;
+    color: #fff;
+    padding-top: 1em;
+}
+
+.relative{
+    position: relative;
+
+}
+
+.absolute{
+    background-color: slateblue;
+}
+
+.fixed{
+    background-color: crimson;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    z-index: 100;
+
+
+}

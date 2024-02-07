@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    width: 90%;
+    height: 500px;
+    margin: 40px auto;
+    outline: 4px solid black;
+/*display genera layouts flexibles para responsive design*/
+   display: flex;
+   /**/
+   flex-direction: column;
+   /*default: nowrap ; wrap=genera nuevo row debajo*/
+   flex-wrap: wrap;
+
+   /*alinea elementos en mainaxis*/
+   justify-content: space-between;
+}
+
+.child{
+    /*sin width los contenedores se ajustan horizontalmente al contenido*/
+    width: 90px;
+    /*sin heigh ocupan todo el viewport de forma verticalmente*/
+    height: 90px;
+
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    /*default: 0 ; ordena elementos por ensima del html */
+    order: 0;
+    /*default: 0 ; toma espacio disponible*/
+    flex-grow: 0;
+}
+
+.child--1{
+    background-color: indigo;
+    order: 1;
+}
+
+.child--2{
+    background-color: deeppink;
+}
+
+.child--3{
+    background-color: royalblue;
+}
+
+.child--4{
+    background-color: seagreen;
+    order: -1;
+}
